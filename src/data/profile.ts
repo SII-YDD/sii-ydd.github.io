@@ -19,6 +19,7 @@ export const profile = {
     { emoji: '🏀', en: 'Basketball', zh: '篮球' },
     { emoji: '🥾', en: 'Hiking', zh: '徒步' },
     { emoji: '🏃', en: 'Long-distance running', zh: '长跑' },
+    { emoji: '🏋️', en: 'Fitness', zh: '健身' },
   ],
 };
 
