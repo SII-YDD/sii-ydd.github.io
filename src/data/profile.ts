@@ -30,7 +30,7 @@ export const work = [
     year: 2026,
     name: 'Orchid',
     venue: 'ASE 2026',
-    award: 'Distinguished Paper Award',
+    award: 'SIGSOFT Distinguished Paper Award',
     conference: 'https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations',
     url: 'https://doi.org/10.1145/3832783.3834403',
     manuscript: 'https://arxiv.org/abs/2604.21505',

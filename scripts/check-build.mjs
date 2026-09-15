@@ -9,7 +9,7 @@ for (const id of ['home', 'about', 'news', 'publications', 'orchid', 'citation-d
 assert.equal((html.match(/data-publication=/g) || []).length, 1, 'Expected only the selected Orchid paper');
 assert.equal((bib.match(/^@/gm) || []).length, 1, 'BibTeX download must match the selected publication');
 assert.match(bib, /@inproceedings\{yang2026ambiguity/);
-for (const content of ['Clarity Is Not Assumed', '10.1145/3832783.3834403', 'ASE 2026', 'Distinguished Paper Award']) {
+for (const content of ['Clarity Is Not Assumed', '10.1145/3832783.3834403', 'ASE 2026', 'SIGSOFT Distinguished Paper Award']) {
   assert.ok(html.includes(content), `Missing publication information: ${content}`);
   assert.ok(bib.includes(content), `Missing citation information: ${content}`);
 }

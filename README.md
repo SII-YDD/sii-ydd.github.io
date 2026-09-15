@@ -2,7 +2,7 @@
 
 A minimal academic website for **Di Yang**, published at [sii-ydd.github.io](https://sii-ydd.github.io/).
 
-Built with Astro. The homepage presents a short profile, personal interests, research news, and a selected publication. It uses a white background, dark text, restrained blue links, and small emoji accents. An award medal and a pale gold label highlight the Distinguished Paper Award. English/Chinese switching, light/dark mode, citation copying, and a downloadable BibTeX file are included. Content is rendered to static HTML and remains readable with JavaScript disabled.
+Built with Astro. The homepage presents a short profile, personal interests, research news, and a selected publication. It uses a white background, dark text, restrained blue links, and small emoji accents. An award medal and a pale gold label highlight the SIGSOFT Distinguished Paper Award. English/Chinese switching, light/dark mode, citation copying, and a downloadable BibTeX file are included. Content is rendered to static HTML and remains readable with JavaScript disabled.
 
 ## Local development
 
@@ -39,7 +39,7 @@ This site is configured for the public repository **SII-YDD/sii-ydd.github.io**.
 ## Sources and publication status
 
 - Identity and publication profile: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
-- SII Ph.D. student affiliation, research interests (intelligent software engineering, AI agents, AI safety), hobbies, and the Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
+- SII Ph.D. student affiliation, research interests (intelligent software engineering, AI agents, AI safety), hobbies, and the SIGSOFT Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
 - Affiliations, listed in the requested order: [Shanghai Innovation Institute](https://www.sii.edu.cn/), then [School of Software Engineering, East China Normal University](https://sei.ecnu.edu.cn/).
 - Joint supervision: supplied by Di Yang. Advisor homepages: [Chengcheng Wan](https://chengcheng-wan.github.io/), [Geguang Pu](https://ggpu-ecnu.github.io/).
 - Conference title, authors, venue, and DOI: [ASE 2026 official program](https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations), [ACM DOI](https://doi.org/10.1145/3832783.3834403).
