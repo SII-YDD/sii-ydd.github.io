@@ -15,6 +15,7 @@ const schema = {
   mainEntity: {
     '@type': 'Person',
     name: profile.name,
+    image: profile.url + '/profile.png',
     jobTitle: 'Ph.D. Student',
     affiliation: [
       { '@type': 'EducationalOrganization', name: profile.institution },
@@ -71,12 +72,17 @@ const schema = {
 
       <main id="main">
         <section class="profile-section" id="about" aria-labelledby="profile-title">
-          <h1 id="profile-title">Di Yang <span class="greeting-emoji" aria-hidden="true">👋</span></h1>
-          <p class="role">
-            <a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer"><span data-en={profile.institution} data-zh={profile.institutionZh}>{profile.institution}</span> (SII)</a>
-            <span aria-hidden="true"> · </span><span data-en="Ph.D. Student" data-zh="博士研究生">Ph.D. Student</span>
-          </p>
-          <p class="secondary-affiliation"><a href="https://sei.ecnu.edu.cn/" target="_blank" rel="noopener noreferrer" data-en={profile.secondaryInstitution} data-zh={profile.secondaryInstitutionZh}>{profile.secondaryInstitution}</a></p>
+          <div class="profile-heading">
+            <div class="profile-identity">
+              <h1 id="profile-title">Di Yang <span class="greeting-emoji" aria-hidden="true">👋</span></h1>
+              <p class="role">
+                <a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer"><span data-en={profile.institution} data-zh={profile.institutionZh}>{profile.institution}</span> (SII)</a>
+                <span aria-hidden="true"> · </span><span data-en="Ph.D. Student" data-zh="博士研究生">Ph.D. Student</span>
+              </p>
+              <p class="secondary-affiliation"><a href="https://sei.ecnu.edu.cn/" target="_blank" rel="noopener noreferrer" data-en={profile.secondaryInstitution} data-zh={profile.secondaryInstitutionZh}>{profile.secondaryInstitution}</a></p>
+            </div>
+            <img class="profile-photo" src="/profile.png" alt="Di Yang" width="460" height="460" fetchpriority="high" decoding="async" />
+          </div>
           <p class="bio" data-en={profile.bio} data-zh={profile.bioZh}>{profile.bio}</p>
           <p class="advisors">
             <span data-en="I am jointly advised by " data-zh="我由 ">I am jointly advised by </span>

@@ -24,6 +24,7 @@ npm run preview
 | Content | File |
 | --- | --- |
 | Affiliations, bilingual biography, advisors, hobbies, publication links and acceptance statistics | `src/data/profile.ts` |
+| Homepage portrait | `public/profile.png` |
 | Selected paper's title, authors, venue and citation | `src/data/publications.bib` |
 | Publications held out of the homepage and download | `src/data/archived-publications.bib` |
 | Homepage structure and bilingual labels | `src/pages/index.astro` |
@@ -39,6 +40,7 @@ This site is configured for the public repository **SII-YDD/sii-ydd.github.io**.
 ## Sources and publication status
 
 - Identity and publication profile: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
+- Homepage portrait: supplied by Di Yang on 2026-09-16 and displayed from the original image.
 - SII Ph.D. student affiliation, research interests (Intelligent Software Engineering, AI Agents, AI Safety), hobbies, and the SIGSOFT Distinguished Paper Award: supplied by Di Yang on 2026-09-16. The bilingual biography describes a research vision of AI systems that understand human intent, support complex software engineering tasks, and operate reliably and safely.
 - Affiliations, listed in the requested order: [Shanghai Innovation Institute](https://www.sii.edu.cn/), then [School of Software Engineering, East China Normal University](https://sei.ecnu.edu.cn/).
 - Joint supervision: supplied by Di Yang. Advisor homepages: [Chengcheng Wan](https://chengcheng-wan.github.io/), [Geguang Pu](https://ggpu-ecnu.github.io/).
