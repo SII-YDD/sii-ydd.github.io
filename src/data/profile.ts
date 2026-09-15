@@ -11,6 +11,10 @@ export const profile = {
   bio: 'My research focuses on intelligent software engineering, AI agents, and AI safety.',
   bioZh: '我的研究方向包括智能化软件工程、Agent（智能体）和人工智能安全。',
   interests: ['Intelligent Software Engineering', 'AI Agents', 'AI Safety'],
+  advisors: [
+    { name: 'Chengcheng Wan', url: 'https://chengcheng-wan.github.io/' },
+    { name: 'Geguang Pu', url: 'https://ggpu-ecnu.github.io/' },
+  ],
   hobbies: [
     { emoji: '🏀', en: 'Basketball', zh: '篮球' },
     { emoji: '🥾', en: 'Hiking', zh: '徒步' },
@@ -31,7 +35,10 @@ export const work = [
     manuscript: 'https://arxiv.org/abs/2604.21505',
     pdf: 'https://arxiv.org/pdf/2604.21505',
     dataset: 'https://huggingface.co/datasets/SII-YDD/Orchid',
-    summary: 'We introduce Orchid, a benchmark of 1,304 tasks, to study how lexical, syntactic, semantic, and vagueness ambiguities in requirements affect LLM-based code generation.',
-    summaryZh: '我们提出包含 1,304 个任务的 Orchid 基准，研究需求中的词汇歧义、句法歧义、语义歧义和模糊性如何影响大语言模型的代码生成。',
+    acceptance: {
+      accepted: 263,
+      submitted: 1304,
+      source: 'https://rebels.cs.uwaterloo.ca/venues/ase.html',
+    },
   },
 ];

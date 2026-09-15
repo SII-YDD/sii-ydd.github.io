@@ -78,6 +78,12 @@ const schema = {
           </p>
           <p class="secondary-affiliation"><a href="https://sei.ecnu.edu.cn/" target="_blank" rel="noopener noreferrer" data-en={profile.secondaryInstitution} data-zh={profile.secondaryInstitutionZh}>{profile.secondaryInstitution}</a></p>
           <p class="bio" data-en={profile.bio} data-zh={profile.bioZh}>{profile.bio}</p>
+          <p class="advisors">
+            <span data-en="I am jointly advised by " data-zh="我由 ">I am jointly advised by </span>
+            <a href={profile.advisors[0].url} target="_blank" rel="noopener noreferrer">{profile.advisors[0].name}</a>
+            <span data-en=" and " data-zh=" 和 "> and </span>
+            <a href={profile.advisors[1].url} target="_blank" rel="noopener noreferrer">{profile.advisors[1].name}</a><span data-en="." data-zh=" 联合指导。">.</span>
+          </p>
           <div class="profile-links">
             <a href={profile.scholar} target="_blank" rel="noopener noreferrer">Google Scholar<Icon name="external" size={14} /></a>
             <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub<Icon name="external" size={14} /></a>
@@ -128,7 +134,10 @@ const schema = {
                         <span data-en="Accepted" data-zh="已录用">Accepted</span>
                         <span class="award"><span aria-hidden="true">🏅</span>{item.award}</span>
                       </p>
-                      <p class="paper-summary" data-en={item.summary} data-zh={item.summaryZh}>{item.summary}</p>
+                      <p class="acceptance-rate">
+                        <span data-en="Research track acceptance rate: " data-zh="研究论文接收率：">Research track acceptance rate: </span>
+                        <a href={item.acceptance.source} target="_blank" rel="noopener noreferrer">{(100 * item.acceptance.accepted / item.acceptance.submitted).toFixed(1)}% ({item.acceptance.accepted.toLocaleString('en-US')} / {item.acceptance.submitted.toLocaleString('en-US')})<Icon name="external" size={12} /></a>
+                      </p>
                       <div class="paper-links">
                         <a href={item.pdf} target="_blank" rel="noopener noreferrer">PDF</a>
                         <a href={item.manuscript} target="_blank" rel="noopener noreferrer">arXiv</a>

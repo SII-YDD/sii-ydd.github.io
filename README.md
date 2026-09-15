@@ -23,7 +23,7 @@ npm run preview
 
 | Content | File |
 | --- | --- |
-| Affiliations, bilingual biography and hobbies, profile and publication links | `src/data/profile.ts` |
+| Affiliations, bilingual biography, advisors, hobbies, publication links and acceptance statistics | `src/data/profile.ts` |
 | Selected paper's title, authors, venue and citation | `src/data/publications.bib` |
 | Publications held out of the homepage and download | `src/data/archived-publications.bib` |
 | Homepage structure and bilingual labels | `src/pages/index.astro` |
@@ -41,10 +41,12 @@ This site is configured for the public repository **SII-YDD/sii-ydd.github.io**.
 - Identity and publication profile: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
 - SII Ph.D. student affiliation, research interests (intelligent software engineering, AI agents, AI safety), hobbies, and the Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
 - Affiliations, listed in the requested order: [Shanghai Innovation Institute](https://www.sii.edu.cn/), then [School of Software Engineering, East China Normal University](https://sei.ecnu.edu.cn/).
+- Joint supervision: supplied by Di Yang. Advisor homepages: [Chengcheng Wan](https://chengcheng-wan.github.io/), [Geguang Pu](https://ggpu-ecnu.github.io/).
 - Conference title, authors, venue, and DOI: [ASE 2026 official program](https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations), [ACM DOI](https://doi.org/10.1145/3832783.3834403).
+- ASE 2026 research-paper acceptance statistics: [University of Waterloo REBELS lab publication record](https://rebels.cs.uwaterloo.ca/venues/ase.html) reports 263 / 1,304, displayed as 20.2% (rounded to one decimal). This is an institutional author record, not a conference-organizer statistics page. The homepage links the percentage to this source.
 - Orchid benchmark and manuscript: [arXiv:2604.21505](https://arxiv.org/abs/2604.21505), [Hugging Face dataset](https://huggingface.co/datasets/SII-YDD/Orchid).
 
-The homepage and BibTeX use the conference title, **Clarity Is Not Assumed: Understanding LLM-Based Code Generation under Ambiguous Requirements**. The linked arXiv manuscript uses its earlier title, **Assessing the Impact of Requirement Ambiguity on LLM-based Function-Level Code Generation**. Summaries and bilingual copy are editorial paraphrases. No publication page numbers have been inferred.
+The homepage and BibTeX use the conference title, **Clarity Is Not Assumed: Understanding LLM-Based Code Generation under Ambiguous Requirements**. The linked arXiv manuscript uses its earlier title, **Assessing the Impact of Requirement Ambiguity on LLM-based Function-Level Code Generation**. The paper overview is omitted from the homepage. No publication page numbers have been inferred.
 
 ## Template and license
 

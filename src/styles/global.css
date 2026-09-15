@@ -78,6 +78,7 @@ h1 { font-size: 42px; line-height: 1.2; font-weight: 650; letter-spacing: -1.3px
 .role { margin-top: 12px; color: var(--secondary); font-size: 17px; }
 .secondary-affiliation { margin-top: 5px; font-size: 16px; }
 .bio { max-width: 780px; margin-top: 25px; line-height: 1.85; }
+.advisors { margin-top: 7px; line-height: 1.85; }
 .profile-links { display: flex; gap: 26px; margin-top: 19px; font-size: 14px; }
 .profile-links a { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; }
 .personal-note { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 20px; margin-top: 23px; padding: 13px 17px; background: var(--surface); border-radius: 6px; font-size: 14px; }
@@ -105,7 +106,8 @@ h2 { font-size: 22px; line-height: 1.4; font-weight: 600; letter-spacing: -.4px;
 .venue > a { font-weight: 600; }
 .venue-separator { color: var(--muted); }
 .award { display: inline-flex; align-items: center; gap: 5px; color: var(--award-text); background: var(--award-background); font-size: 13px; font-weight: 600; border-radius: 4px; padding: 2px 8px; margin-left: 3px; }
-.paper-summary { margin-top: 14px; font-size: 15px; line-height: 1.8; color: var(--secondary); }
+.acceptance-rate { margin-top: 12px; font-size: 13px; line-height: 1.8; color: var(--secondary); }
+.acceptance-rate a { display: inline-flex; align-items: center; gap: 4px; }
 .paper-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; margin-top: 13px; font-size: 14px; }
 .paper-links a { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; }
 .paper-links button { background: none; border: 0; color: var(--accent); padding: 0; min-height: 30px; }
@@ -137,6 +139,7 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
   .role { font-size: 16px; }
   .secondary-affiliation { font-size: 15px; }
   .bio { font-size: 15px; margin-top: 21px; }
+  .advisors { font-size: 15px; }
   .section { margin-bottom: 32px; padding-top: 23px; }
   h2 { font-size: 20px; }
   .news-item, .publication { grid-template-columns: minmax(0, 1fr); gap: 5px; }
