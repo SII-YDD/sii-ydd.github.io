@@ -8,8 +8,8 @@ export const profile = {
   github: 'https://github.com/SII-YDD',
   url: 'https://sii-ydd.github.io',
   updated: '2026-09-16',
-  bio: 'My research focuses on intelligent software engineering, AI agents, and AI safety.',
-  bioZh: '我的研究方向包括智能化软件工程、Agent（智能体）和人工智能安全。',
+  bio: 'My research focuses on Intelligent Software Engineering, AI Agents, and AI Safety. I aim to build trustworthy AI systems that understand human intent, assist with complex software engineering tasks, and operate reliably and safely in real-world settings.',
+  bioZh: '我的研究方向包括智能化软件工程、AI 智能体和人工智能安全。我希望构建能够理解人类意图、协助完成复杂软件工程任务，并在真实场景中可靠、安全运行的 AI 系统。',
   interests: ['Intelligent Software Engineering', 'AI Agents', 'AI Safety'],
   advisors: [
     { name: 'Chengcheng Wan', url: 'https://chengcheng-wan.github.io/' },
