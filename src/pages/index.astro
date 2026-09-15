@@ -136,7 +136,7 @@ const schema = {
                       </p>
                       <p class="acceptance-rate">
                         <span data-en="Research track acceptance rate: " data-zh="研究论文接收率：">Research track acceptance rate: </span>
-                        <a href={item.acceptance.source} target="_blank" rel="noopener noreferrer">{(100 * item.acceptance.accepted / item.acceptance.submitted).toFixed(1)}% ({item.acceptance.accepted.toLocaleString('en-US')} / {item.acceptance.submitted.toLocaleString('en-US')})<Icon name="external" size={12} /></a>
+                        <span>{(100 * item.acceptance.accepted / item.acceptance.submitted).toFixed(1)}% ({item.acceptance.accepted.toLocaleString('en-US')} / {item.acceptance.submitted.toLocaleString('en-US')})</span>
                       </p>
                       <div class="paper-links">
                         <a href={item.pdf} target="_blank" rel="noopener noreferrer">PDF</a>
