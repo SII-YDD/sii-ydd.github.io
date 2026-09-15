@@ -11,6 +11,11 @@ export const profile = {
   bio: 'My research focuses on code generation, AI for software engineering, and agents. I am interested in how AI systems understand software requirements and generate reliable code.',
   bioZh: '我的研究方向包括代码生成、面向软件工程的人工智能和智能体，关注 AI 系统如何理解软件需求，并生成可靠的代码。',
   interests: ['Code Generation', 'AI for Software Engineering', 'Agents'],
+  hobbies: [
+    { emoji: '🏀', en: 'Basketball', zh: '篮球' },
+    { emoji: '🥾', en: 'Hiking', zh: '徒步' },
+    { emoji: '🏃', en: 'Long-distance running', zh: '长跑' },
+  ],
 };
 
 // Selected work only. Other publications are preserved in archived-publications.bib.

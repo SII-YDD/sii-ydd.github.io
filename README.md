@@ -2,7 +2,7 @@
 
 A minimal academic website for **Di Yang**, published at [sii-ydd.github.io](https://sii-ydd.github.io/).
 
-Built with Astro. The homepage presents a short profile, research news, and a selected publication. It uses a white background, dark text, and restrained blue links. English/Chinese switching, light/dark mode, citation copying, and a downloadable BibTeX file are included. Content is rendered to static HTML and remains readable with JavaScript disabled.
+Built with Astro. The homepage presents a short profile, personal interests, research news, and a selected publication. It uses a white background, dark text, restrained blue links, and small emoji accents. An award medal and a pale gold label highlight the Distinguished Paper Award. English/Chinese switching, light/dark mode, citation copying, and a downloadable BibTeX file are included. Content is rendered to static HTML and remains readable with JavaScript disabled.
 
 ## Local development
 
@@ -23,7 +23,7 @@ npm run preview
 
 | Content | File |
 | --- | --- |
-| Affiliations, bilingual biography, profile and publication links | `src/data/profile.ts` |
+| Affiliations, bilingual biography and hobbies, profile and publication links | `src/data/profile.ts` |
 | Selected paper's title, authors, venue and citation | `src/data/publications.bib` |
 | Publications held out of the homepage and download | `src/data/archived-publications.bib` |
 | Homepage structure and bilingual labels | `src/pages/index.astro` |

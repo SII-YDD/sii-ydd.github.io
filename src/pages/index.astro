@@ -72,7 +72,7 @@ const schema = {
 
       <main id="main">
         <section class="profile-section" id="about" aria-labelledby="profile-title">
-          <h1 id="profile-title">Di Yang</h1>
+          <h1 id="profile-title">Di Yang <span class="greeting-emoji" aria-hidden="true">👋</span></h1>
           <p class="role" data-en="Ph.D. Student" data-zh="博士研究生">Ph.D. Student</p>
           <div class="affiliations">
             <a href="https://www.ecnu.edu.cn/" target="_blank" rel="noopener noreferrer" data-en={profile.institution} data-zh={profile.institutionZh}>{profile.institution}</a>
@@ -86,6 +86,14 @@ const schema = {
             <a href={profile.scholar} target="_blank" rel="noopener noreferrer">Google Scholar<Icon name="external" size={14} /></a>
             <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub<Icon name="external" size={14} /></a>
           </div>
+          <div class="personal-note">
+            <p data-en="Outside research, I enjoy" data-zh="科研之外，我喜欢">Outside research, I enjoy</p>
+            <ul class="hobbies">
+              {profile.hobbies.map(hobby => (
+                <li><span class="hobby-emoji" aria-hidden="true">{hobby.emoji}</span><span data-en={hobby.en} data-zh={hobby.zh}>{hobby.en}</span></li>
+              ))}
+            </ul>
+          </div>
         </section>
 
         <section class="section" id="news" aria-labelledby="news-title">
@@ -95,7 +103,7 @@ const schema = {
             <p>
               <span data-en="Our Orchid paper was accepted to" data-zh="Orchid 论文被">Our Orchid paper was accepted to</span>
               {' '}<strong>ASE 2026</strong><span data-en=" and received a " data-zh=" 录用，并获 "> and received a </span>
-              <a href="#orchid">Distinguished Paper Award</a><span data-en="." data-zh="。">.</span>
+              <a href="#orchid"><span aria-hidden="true">🏅</span> Distinguished Paper Award</a><span data-en="." data-zh="。">.</span>
             </p>
           </div>
         </section>
@@ -122,7 +130,7 @@ const schema = {
                         <a href={item.conference} target="_blank" rel="noopener noreferrer">{item.venue}</a>
                         <span class="venue-separator" aria-hidden="true">·</span>
                         <span data-en="Accepted" data-zh="已录用">Accepted</span>
-                        <span class="award">{item.award}</span>
+                        <span class="award"><span aria-hidden="true">🏅</span>{item.award}</span>
                       </p>
                       <p class="paper-summary" data-en={item.summary} data-zh={item.summaryZh}>{item.summary}</p>
                       <div class="paper-links">
