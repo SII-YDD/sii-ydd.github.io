@@ -1,8 +1,8 @@
 # Di Yang — Academic Homepage
 
-A colorful, responsive academic website for **Di Yang**, published at **https://sii-ydd.github.io/**.
+A minimal academic website for **Di Yang**, published at [sii-ydd.github.io](https://sii-ydd.github.io/).
 
-Built with Astro. The design uses electric blue, coral, and lilac; includes an animated mathematical sculpture, English/Chinese content, a dark-mode toggle, research cards, publication filters, citation copying, and a downloadable BibTeX bibliography. Content is rendered to static HTML and remains readable with JavaScript disabled.
+Built with Astro. The homepage presents a short profile, research news, and a selected publication. It uses a white background, dark text, and restrained blue links. English/Chinese switching, light/dark mode, citation copying, and a downloadable BibTeX file are included. Content is rendered to static HTML and remains readable with JavaScript disabled.
 
 ## Local development
 
@@ -23,29 +23,31 @@ npm run preview
 
 | Content | File |
 | --- | --- |
-| Name, affiliation, profile links, bilingual biography, research summaries, Scholar snapshot | `src/data/profile.ts` |
-| Paper titles, full author lists, venues, dates and citations | `src/data/publications.bib` |
+| Affiliations, bilingual biography, profile and publication links | `src/data/profile.ts` |
+| Selected paper's title, authors, venue and citation | `src/data/publications.bib` |
+| Publications held out of the homepage and download | `src/data/archived-publications.bib` |
 | Homepage structure and bilingual labels | `src/pages/index.astro` |
-| Color palette, typography, responsive layout | `src/styles/global.css` |
-| 3D point-cloud animation | `src/scripts/scene.ts` |
+| Colors, typography and responsive layout | `src/styles/global.css` |
+| Language, theme and citation interactions | `src/scripts/site.ts` |
 
-The Scholar snapshot is **manual, as of 2026-09-16**, not a live feed. After adding a paper, add a matching record in both the bibliography and `work`, then update the displayed counts in `index.astro` and the expected totals in `scripts/check-build.mjs`. No email, degree, current job title, portrait, or CV was added because these were not supplied or verified.
+TOFE and IBCD are preserved in the archive source file for future use. They are not imported into the homepage or included in `/publications.bib`. Add a matching entry in `work` and the selected bibliography when adding a publication, then update the news and build assertions as needed.
 
 ## Publishing
 
-This site is configured for the public repository **SII-YDD/sii-ydd.github.io**. In **Settings → Pages**, select **GitHub Actions** as the source. Pushing to `main` builds, checks, and deploys `dist/` with the included workflow. No personal access token is stored in the site.
+This site is configured for the public repository **SII-YDD/sii-ydd.github.io**. GitHub Pages uses **GitHub Actions**. Pushing to `main` builds, checks, and deploys `dist/` with the included workflow. No personal access token is stored in the site.
 
 ## Sources and publication status
 
-- Identity, affiliation, interests and metric snapshot: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en), retrieved 2026-09-16.
-- Orchid title, authors, benchmark size and preprint status: [arXiv:2604.21505](https://arxiv.org/abs/2604.21505).
-- TOFE title, authors, method and preprint status: [arXiv:2405.18071](https://arxiv.org/abs/2405.18071).
-- IBCD conference publication: [ICASSP 2024 program](https://cmsworkshops.com/ICASSP2024/view_paper.php?PaperNum=4006), [DOI](https://doi.org/10.1109/ICASSP48485.2024.10448145); open manuscript: [arXiv:2305.10929](https://arxiv.org/abs/2305.10929).
+- Identity and research interests: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
+- Ph.D. status, joint training at SII, and the Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
+- Institution's English name: [Shanghai Innovation Institute](https://www.sii.edu.cn/).
+- Conference title, authors, venue, and DOI: [ASE 2026 official program](https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations), [ACM DOI](https://doi.org/10.1145/3832783.3834403).
+- Orchid benchmark and manuscript: [arXiv:2604.21505](https://arxiv.org/abs/2604.21505), [Hugging Face dataset](https://huggingface.co/datasets/SII-YDD/Orchid).
 
-Paper summaries and bilingual copy are editorial paraphrases. Research artwork is conceptual illustration, not a reproduction of experimental results. The two arXiv-only entries are explicitly marked **Preprint**.
+The homepage and BibTeX use the conference title, **Clarity Is Not Assumed: Understanding LLM-Based Code Generation under Ambiguous Requirements**. The linked arXiv manuscript uses its earlier title, **Assessing the Impact of Requirement Ambiguity on LLM-based Function-Level Code Generation**. Summaries and bilingual copy are editorial paraphrases. No publication page numbers have been inferred.
 
-## Template and licenses
+## Template and license
 
-Adapted from [Scholar Pages](https://github.com/jxpeng98/astro-theme-scholars) by Jiaxin Peng (MIT), revision `1270329`. This version retains and uses the template's BibTeX parsing and citation-formatting engine in `src/lib/bibtex.ts`; the presentation, interactions and homepage were rebuilt for this site. The original license is retained in `LICENSE`.
+Adapted from [Scholar Pages](https://github.com/jxpeng98/astro-theme-scholars) by Jiaxin Peng (MIT), revision `1270329`. This version retains the template's BibTeX parsing and citation-formatting engine in `src/lib/bibtex.ts`; the presentation and homepage were rebuilt for this site. The original license is retained in `LICENSE`.
 
-Space Grotesk is self-hosted through Fontsource under the SIL Open Font License; see `public/fonts/OFL.txt`. Pretext provides progressive text measurement. No analytics, third-party tracking or runtime font CDN is required.
+The site uses system fonts. No analytics, third-party tracking or runtime font CDN is required.
