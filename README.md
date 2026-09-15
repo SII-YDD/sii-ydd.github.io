@@ -38,8 +38,8 @@ This site is configured for the public repository **SII-YDD/sii-ydd.github.io**.
 
 ## Sources and publication status
 
-- Identity and research interests: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
-- Ph.D. status, joint training at SII, and the Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
+- Identity and publication profile: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
+- SII Ph.D. student affiliation, research interests (intelligent software engineering, AI agents, AI safety), hobbies, and the Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
 - Institution's English name: [Shanghai Innovation Institute](https://www.sii.edu.cn/).
 - Conference title, authors, venue, and DOI: [ASE 2026 official program](https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations), [ACM DOI](https://doi.org/10.1145/3832783.3834403).
 - Orchid benchmark and manuscript: [arXiv:2604.21505](https://arxiv.org/abs/2604.21505), [Hugging Face dataset](https://huggingface.co/datasets/SII-YDD/Orchid).

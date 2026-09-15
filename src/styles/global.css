@@ -77,8 +77,6 @@ section, article { scroll-margin-top: 32px; }
 h1 { font-size: 42px; line-height: 1.2; font-weight: 650; letter-spacing: -1.3px; }
 .greeting-emoji { display: inline-block; font-size: .62em; vertical-align: .08em; margin-left: 6px; }
 .role { margin-top: 12px; color: var(--secondary); font-size: 17px; }
-.affiliations { margin-top: 6px; font-size: 16px; line-height: 1.8; }
-.affiliations p { color: var(--secondary); }
 .bio { max-width: 780px; margin-top: 25px; line-height: 1.85; }
 .profile-links { display: flex; gap: 26px; margin-top: 19px; font-size: 14px; }
 .profile-links a { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; }
@@ -137,7 +135,6 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
   .profile-section { padding: 37px 0 34px; }
   h1 { font-size: 36px; }
   .role { font-size: 16px; }
-  .affiliations { font-size: 15px; }
   .bio { font-size: 15px; margin-top: 21px; }
   .section { margin-bottom: 32px; padding-top: 23px; }
   h2 { font-size: 20px; }

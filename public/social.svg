@@ -2,11 +2,10 @@
   <rect width="1200" height="630" fill="#fff"/>
   <g font-family="Arial,Helvetica,sans-serif">
     <text x="100" y="186" font-size="72" font-weight="600" fill="#25282d">Di Yang</text>
-    <text x="103" y="244" font-size="28" fill="#555b65">Ph.D. Student</text>
-    <text x="103" y="318" font-size="27" fill="#285d91">East China Normal University</text>
-    <text x="103" y="365" font-size="27" fill="#285d91">Shanghai Innovation Institute · Joint Training</text>
+    <text x="103" y="263" font-size="30" fill="#285d91">Shanghai Innovation Institute (SII)</text>
+    <text x="103" y="316" font-size="28" fill="#555b65">Ph.D. Student</text>
     <path d="M103 423H1097" stroke="#e4e6e9"/>
-    <text x="103" y="477" font-size="24" fill="#555b65">Code Generation · AI for Software Engineering · Agents</text>
+    <text x="103" y="477" font-size="24" fill="#555b65">Intelligent Software Engineering · AI Agents · AI Safety</text>
     <text x="103" y="550" font-size="21" fill="#6d737c">sii-ydd.github.io</text>
   </g>
 </svg>

@@ -6,7 +6,7 @@ import Icon from '../components/Icon.astro';
 import '../styles/global.css';
 
 const papers = parseBibtex(publications);
-const description = 'Di Yang, Ph.D. student at East China Normal University and jointly trained at Shanghai Innovation Institute. Research in code generation, AI for software engineering, and agents.';
+const description = 'Di Yang, Ph.D. student at Shanghai Innovation Institute (SII). Research in intelligent software engineering, AI agents, and AI safety.';
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
@@ -17,8 +17,7 @@ const schema = {
     name: profile.name,
     jobTitle: 'Ph.D. Student',
     affiliation: [
-      { '@type': 'CollegeOrUniversity', name: profile.institution },
-      { '@type': 'EducationalOrganization', name: profile.jointInstitution },
+      { '@type': 'EducationalOrganization', name: profile.institution },
     ],
     sameAs: [profile.scholar, profile.github],
     knowsAbout: profile.interests,
@@ -73,14 +72,10 @@ const schema = {
       <main id="main">
         <section class="profile-section" id="about" aria-labelledby="profile-title">
           <h1 id="profile-title">Di Yang <span class="greeting-emoji" aria-hidden="true">👋</span></h1>
-          <p class="role" data-en="Ph.D. Student" data-zh="博士研究生">Ph.D. Student</p>
-          <div class="affiliations">
-            <a href="https://www.ecnu.edu.cn/" target="_blank" rel="noopener noreferrer" data-en={profile.institution} data-zh={profile.institutionZh}>{profile.institution}</a>
-            <p>
-              <span data-en="Jointly trained at" data-zh="联合培养于">Jointly trained at</span>
-              {' '}<a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer"><span data-en={profile.jointInstitution} data-zh={profile.jointInstitutionZh}>{profile.jointInstitution}</span> (SII)</a>
-            </p>
-          </div>
+          <p class="role">
+            <a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer"><span data-en={profile.institution} data-zh={profile.institutionZh}>{profile.institution}</span> (SII)</a>
+            <span aria-hidden="true"> · </span><span data-en="Ph.D. Student" data-zh="博士研究生">Ph.D. Student</span>
+          </p>
           <p class="bio" data-en={profile.bio} data-zh={profile.bioZh}>{profile.bio}</p>
           <div class="profile-links">
             <a href={profile.scholar} target="_blank" rel="noopener noreferrer">Google Scholar<Icon name="external" size={14} /></a>
