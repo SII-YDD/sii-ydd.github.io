@@ -1,0 +1,15 @@
+---
+const { name = 'arrow', size = 20 } = Astro.props;
+const paths: Record<string, string> = {
+  arrow: 'M5 12h14M12 5l7 7-7 7',
+  external: 'M7 17 17 7M7 7h10v10',
+  down: 'M12 5v14M5 12l7 7 7-7',
+  sun: 'M12 3V1m0 22v-2M3 12H1m22 0h-2M5.6 5.6 4.2 4.2m15.6 15.6-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0',
+  moon: 'M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z',
+  copy: 'M9 9h11v11H9zM5 15H3V3h12v2',
+  close: 'm6 6 12 12M18 6 6 18',
+  scholar: 'm2 9 10-6 10 6-10 6-10-6Zm4 3v6c4 3 8 3 12 0v-6M22 9v9',
+  github: 'M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.4a5.8 5.8 0 0 0-1.6-4 5.4 5.4 0 0 0-.1-4S17.8-.5 15 1.4a13.8 13.8 0 0 0-7 0C5.2-.5 3.8 0 3.8 0a5.4 5.4 0 0 0-.1 4 5.8 5.8 0 0 0-1.6 4c0 5.8 3.5 7 6.8 7.4A3.5 3.5 0 0 0 8 18v4',
+};
+---
+<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={paths[name] || paths.arrow}/></svg>
