@@ -43,6 +43,7 @@ This site is configured for the public repository **SII-YDD/sii-ydd.github.io**.
 - Affiliations, listed in the requested order: [Shanghai Innovation Institute](https://www.sii.edu.cn/), then [School of Software Engineering, East China Normal University](https://sei.ecnu.edu.cn/).
 - Joint supervision: supplied by Di Yang. Advisor homepages: [Chengcheng Wan](https://chengcheng-wan.github.io/), [Geguang Pu](https://ggpu-ecnu.github.io/).
 - Conference title, authors, venue, and DOI: [ASE 2026 official program](https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations), [ACM DOI](https://doi.org/10.1145/3832783.3834403).
+- ASE conference ranking: A in the [CCF Software Engineering / System Software / Programming Languages list](https://www.ccf.org.cn/Academic_Evaluation/TCSE_SS_PDL/), displayed as “CCF A” beside ASE 2026.
 - ASE 2026 research-paper acceptance statistics: [University of Waterloo REBELS lab publication record](https://rebels.cs.uwaterloo.ca/venues/ase.html) reports 263 / 1,304, displayed as 20.2% (rounded to one decimal). This is an institutional author record, not a conference-organizer statistics page. The homepage displays the rate as plain text without a source link.
 - Orchid benchmark and manuscript: [arXiv:2604.21505](https://arxiv.org/abs/2604.21505), [Hugging Face dataset](https://huggingface.co/datasets/SII-YDD/Orchid).
 
