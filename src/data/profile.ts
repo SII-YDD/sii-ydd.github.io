@@ -2,6 +2,8 @@ export const profile = {
   name: 'Di Yang',
   institution: 'Shanghai Innovation Institute',
   institutionZh: '上海创智学院',
+  secondaryInstitution: 'School of Software Engineering, East China Normal University',
+  secondaryInstitutionZh: '华东师范大学软件工程学院',
   scholar: 'https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en',
   github: 'https://github.com/SII-YDD',
   url: 'https://sii-ydd.github.io',

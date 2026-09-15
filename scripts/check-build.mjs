@@ -27,5 +27,5 @@ for (const match of html.matchAll(/(?:src|href)="(\/[^"#?]*)/g)) {
 assert.ok(html.includes('https://sii-ydd.github.io/'), 'Production URL is missing');
 assert.ok(html.includes('rel="noopener noreferrer"'), 'External link isolation is missing');
 const schema = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
-assert.deepEqual(schema.mainEntity.affiliation.map(item => item.name), ['Shanghai Innovation Institute'], 'SII must be the displayed affiliation');
+assert.deepEqual(schema.mainEntity.affiliation.map(item => item.name), ['Shanghai Innovation Institute', 'School of Software Engineering, East China Normal University'], 'Affiliations must list SII first, followed by ECNU Software Engineering');
 console.log('Build verified: selected paper, ASE award and citation, SII affiliation, Hugging Face, archived-paper exclusion, and local assets.');

@@ -40,7 +40,7 @@ This site is configured for the public repository **SII-YDD/sii-ydd.github.io**.
 
 - Identity and publication profile: [Google Scholar](https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en).
 - SII Ph.D. student affiliation, research interests (intelligent software engineering, AI agents, AI safety), hobbies, and the Distinguished Paper Award: supplied by Di Yang on 2026-09-16.
-- Institution's English name: [Shanghai Innovation Institute](https://www.sii.edu.cn/).
+- Affiliations, listed in the requested order: [Shanghai Innovation Institute](https://www.sii.edu.cn/), then [School of Software Engineering, East China Normal University](https://sei.ecnu.edu.cn/).
 - Conference title, authors, venue, and DOI: [ASE 2026 official program](https://conf.researchr.org/track/ase-2026/ase-2026-not-in-person-presentations), [ACM DOI](https://doi.org/10.1145/3832783.3834403).
 - Orchid benchmark and manuscript: [arXiv:2604.21505](https://arxiv.org/abs/2604.21505), [Hugging Face dataset](https://huggingface.co/datasets/SII-YDD/Orchid).
 

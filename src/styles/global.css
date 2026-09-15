@@ -63,8 +63,7 @@ section, article { scroll-margin-top: 32px; }
 .skip-link:focus { top: 10px; }
 
 .site-header { display: flex; align-items: center; gap: 32px; padding: 28px 0; border-bottom: 1px solid var(--line); }
-.brand { color: var(--text); font-size: 16px; font-weight: 600; letter-spacing: -.2px; margin-right: auto; }
-.site-header nav { display: flex; gap: 26px; font-size: 14px; }
+.site-header nav { display: flex; gap: 26px; font-size: 14px; margin-right: auto; }
 .site-header nav a { color: var(--secondary); }
 .header-tools { display: flex; align-items: center; gap: 7px; padding-left: 15px; border-left: 1px solid var(--line); }
 .header-tools button { display: inline-flex; align-items: center; justify-content: center; border: 0; background: transparent; min-width: 32px; min-height: 32px; padding: 4px; font-size: 13px; color: var(--secondary); }
@@ -77,6 +76,7 @@ section, article { scroll-margin-top: 32px; }
 h1 { font-size: 42px; line-height: 1.2; font-weight: 650; letter-spacing: -1.3px; }
 .greeting-emoji { display: inline-block; font-size: .62em; vertical-align: .08em; margin-left: 6px; }
 .role { margin-top: 12px; color: var(--secondary); font-size: 17px; }
+.secondary-affiliation { margin-top: 5px; font-size: 16px; }
 .bio { max-width: 780px; margin-top: 25px; line-height: 1.85; }
 .profile-links { display: flex; gap: 26px; margin-top: 19px; font-size: 14px; }
 .profile-links a { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; }
@@ -128,13 +128,14 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
 
 @media (max-width: 640px) {
   .page-shell { width: calc(100% - 40px); }
-  .site-header { flex-wrap: wrap; gap: 14px 20px; padding: 20px 0 17px; }
-  .site-header nav { order: 3; width: 100%; gap: 24px; font-size: 13px; }
+  .site-header { flex-wrap: wrap; gap: 12px 16px; padding: 20px 0 17px; }
+  .site-header nav { gap: 16px; font-size: 13px; }
   .header-tools { border-left: 0; padding-left: 0; }
   .header-tools button { min-width: 36px; min-height: 36px; }
   .profile-section { padding: 37px 0 34px; }
   h1 { font-size: 36px; }
   .role { font-size: 16px; }
+  .secondary-affiliation { font-size: 15px; }
   .bio { font-size: 15px; margin-top: 21px; }
   .section { margin-bottom: 32px; padding-top: 23px; }
   h2 { font-size: 20px; }
