@@ -7,13 +7,13 @@ export const profile = {
   scholar: 'https://scholar.google.com/citations?user=GpuCXTMAAAAJ&hl=en',
   github: 'https://github.com/SII-YDD',
   url: 'https://sii-ydd.github.io',
-  updated: '2026-09-16',
+  updated: '2026-09-17',
   bio: 'My research focuses on Intelligent Software Engineering, AI Agents, and AI Safety. I aim to build trustworthy AI systems that understand human intent, assist with complex software engineering tasks, and operate reliably and safely in real-world settings.',
   bioZh: '我的研究方向包括智能化软件工程、AI 智能体和人工智能安全。我希望构建能够理解人类意图、协助完成复杂软件工程任务，并在真实场景中可靠、安全运行的 AI 系统。',
   interests: ['Intelligent Software Engineering', 'AI Agents', 'AI Safety'],
   advisors: [
-    { name: 'Chengcheng Wan', url: 'https://chengcheng-wan.github.io/' },
-    { name: 'Geguang Pu', url: 'https://ggpu-ecnu.github.io/' },
+    { name: 'Prof. Geguang Pu', url: 'https://ggpu-ecnu.github.io/' },
+    { name: 'Prof. Chengcheng Wan', url: 'https://chengcheng-wan.github.io/' },
   ],
   hobbies: [
     { emoji: '🏀', en: 'Basketball', zh: '篮球' },
