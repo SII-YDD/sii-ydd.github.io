@@ -3,6 +3,7 @@ import { profile, work } from '../data/profile';
 import publications from '../data/publications.bib?raw';
 import { parseBibtex, formatCitations } from '../lib/bibtex';
 import Icon from '../components/Icon.astro';
+import EmailLink from '../components/EmailLink.astro';
 import '../styles/global.css';
 
 const papers = parseBibtex(publications);
@@ -91,6 +92,7 @@ const schema = {
             <a href={profile.advisors[1].url} target="_blank" rel="noopener noreferrer">{profile.advisors[1].name}</a><span data-en="." data-zh=" 联合指导。">.</span>
           </p>
           <div class="profile-links">
+            <EmailLink />
             <a href={profile.scholar} target="_blank" rel="noopener noreferrer">Google Scholar<Icon name="external" size={14} /></a>
             <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub<Icon name="external" size={14} /></a>
           </div>

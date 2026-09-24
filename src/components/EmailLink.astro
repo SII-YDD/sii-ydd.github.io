@@ -1,0 +1,18 @@
+---
+// Basic obfuscation keeps the address out of plain-text HTML; it is not encryption.
+const encodedAddress = 'ZGl5YW5nODE3QGdtYWlsLmNvbQ==';
+---
+<a href="mailto:" data-email={encodedAddress}>
+  <span data-en="Email" data-zh="邮箱">Email</span>
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M3 5h18v14H3zM3 5l9 7 9-7" />
+  </svg>
+</a>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('a[data-email]').forEach(link => {
+    link.addEventListener('click', () => {
+      link.href = `mailto:${atob(link.dataset.email!)}`;
+    });
+  });
+</script>
